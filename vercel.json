@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "name": "prj_3jqUHkgIJnAt4kMXuGdgPNvrY7Qx",
+  "public": true,
+  "builds": [{ "src": "src/index.ts", "use": "@vercel/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "/src/index.ts" }]
+}
