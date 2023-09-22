@@ -1,7 +1,16 @@
 {
-  "version": 2,
-  "name": "prj_3jqUHkgIJnAt4kMXuGdgPNvrY7Qx",
-  "public": true,
-  "builds": [{ "src": "src/index.ts", "use": "@vercel/node" }],
-  "routes": [{ "src": "/(.*)", "dest": "/src/index.ts" }]
+  "functions": {
+    "app/api/conversation/route.ts": {
+      "memory": 3008,
+      "maxDuration": 60
+    },
+    "app/api/code/route.ts": {
+      "memory": 3008,
+      "maxDuration": 60
+    },
+    "app/api/image/route.ts": {
+      "memory": 3008,
+      "maxDuration": 60
+    }
+  }
 }
